@@ -48,7 +48,7 @@ JOIN post p ON post_id = p.id
 GROUP BY post_id 
 */
 -- 5. Подбор подходящих резюме по требованиям департаментов
-
+/*
 SELECT  post AS 'На должность',
 		resume.age AS 'Требуемый возраст',
 		salary_max AS 'Мах оклад',
@@ -60,9 +60,12 @@ SELECT  post AS 'На должность',
 		FROM resume JOIN request_hr rh 
 WHERE post = profession AND resume.age > rh.age AND salary <= salary_max
 GROUP BY post ;
+*/
 
 -- 5. бюджет ФОТ 1го департамента на 2022 год  
 -- количество сотрудников, выполнивших работу в период с ... по
+SELECT *
+FROM 
 
 -- 6. Изменеие рейтинга выбранному работнику после по решению руководителя
 /*
