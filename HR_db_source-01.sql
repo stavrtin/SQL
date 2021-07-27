@@ -1,4 +1,4 @@
--- 1. штат фирмы
+-- 1. штат фирмы (all correct)
 /*
 SELECT 	lastname AS Фамилия,
 		firstname AS Имя,
