@@ -180,7 +180,9 @@ CREATE TABLE resume (
 	profession VARCHAR(100),
 	technical_school VARCHAR(150),
 	education_end date,
-	salary float
+	salary float,
+	phone BIGINT UNIQUE,
+    adress VARCHAR(255)
 	);
 
 
@@ -196,10 +198,6 @@ CREATE TABLE resume_history (
 FOREIGN KEY (resume_id) REFERENCES resume(id)
 );
 
-
-
-
- 
 
 
 INSERT INTO `post` (`id`, `post_name`, `post_salary_max`, `post_salary_min`) VALUES ('1', ' разнорабочий', '11940', '2361');
@@ -273,26 +271,22 @@ INSERT INTO `profiles` (`workers_id`, `rating`, `profession`, `birthday`, `educa
 INSERT INTO `profiles` (`workers_id`, `rating`, `profession`, `birthday`, `education`, `family_status`, `adress`, `phone`, `photo_id`) VALUES ('15', '33', 'сварщик', '1985-05-29', ' Колледж №12', 'ж', '72669 Ratke Squares\nKaleighbury, TN 54441-2839', '187', NULL);
 
 
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('1', 'Angel', 'Fritsch', 28, 'ж', ' плотник', ' Архитектурный колледж', '2005-10-20', '22715');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('2', 'Devan', 'Franecki', 52, 'ж', ' плотник', 'ПТУ №6', '1983-06-19', '33724');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('3', 'Makenzie', 'Rowe', 24, 'н', ' стропальщик', 'ПТУ №6', '1980-09-19', '31036');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('4', 'Garret', 'Bernier', 29, 'ж', ' электрик', 'Строительный колледж №2', '1982-03-11', '67759');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('5', 'Oceane', 'Krajcik', 45, 'н', 'сварщик', 'Строительный колледж №2', '1981-06-04', '73057');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('6', 'Andy', 'Schmeler', 38, 'ж', ' слесарь', 'ПТУ №6', '1971-01-25', '25265');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('7', 'Melvina', 'Cummerata', 58, 'н', ' плотник', ' Архитектурный колледж', '1984-04-11', '78850');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('8', 'Davin', 'Smith', 39, 'н', 'сварщик', 'ПТУ№1', '1996-04-25', '65294');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('9', 'Vincenza', 'Stoltenberg', 39, 'н', ' водитель', ' Колледж №7', '2010-03-06', '45392');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('10', 'Abraham', 'Lehner', 26, 'н', ' разнорабочий', ' Архитектурный колледж', '1985-03-03', '66390');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('11', 'Chadrick', 'McCullough', 30, 'н', 'сварщик', 'Строительный колледж №2', '1980-01-13', '64631');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('12', 'Una', 'Jast', 43, 'ж', ' водитель', 'ПТУ №6', '2013-10-29', '36200');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('13', 'Claudine', 'Pacocha', 38, 'ж', ' повар', ' Архитектурный колледж', '1984-05-24', '43150');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('14', 'Ryleigh', 'Willms', 29, 'ж', ' программист', 'ПТУ№1', '2016-11-05', '65159');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('15', 'Jay', 'Bogan', 51, 'н', 'сварщик', 'Строительный колледж №2', '1988-02-04', '54887');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('16', 'Dylan', 'Fahey', 30, 'ж', ' разнорабочий', 'Строительный колледж №2', '2017-06-08', '21314');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('17', 'Tristin', 'Daugherty', 57, 'ж', ' программист', ' Колледж №7', '2009-10-04', '73713');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('18', 'Emie', 'Jacobs', 37, 'н', ' повар', 'ПТУ №6', '1992-03-10', '45423');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('19', 'Daisha', 'O\'Keefe', 34, 'н', ' плотник', ' Колледж №7', '1984-12-30', '52412');
-INSERT INTO `resume` (`id`, `firstname`, `lastname`, `age`, `family_status`, `profession`, `technical_school`, `education_end`, `salary`) VALUES ('20', 'Ruby', 'Berge', 31, 'н', ' повар', 'ПТУ №6', '1970-12-21', '47240');
+INSERT INTO `resume` VALUES 
+(1,'Kelvin','Zulauf',36,'н',' слесарь',' Колледж №7','2007-07-20',30000,89240478981,'32180 Murazik Vista Apt. 178\nNorth Stephontown, KS 01999'),
+(2,'Maya','Schroeder',33,'н',' электрик','ПТУ№1','1973-08-30',40000,89266384504,'10730 Reynolds Light Apt. 374\nJadabury, NC 07676-1805'),
+(3,'Jaunita','Reichert',47,'ж',' слесарь','Строительный колледж №2','2001-01-15',47000,89389273147,'933 Amanda Island Suite 954\nPort Makenzie, NE 91024-8025'),
+(4,'Clare','Cartwright',41,'н',' арматурщик','Строительный колледж №2','2017-06-26',70000,89875802556,'038 Bergstrom Mountains\nPort Jadyn, AR 28513-6789'),
+(5,'Julio','West',48,'ж',' плотник',' Архитектурный колледж','1996-06-09',70000,89835706298,'4738 Gibson Vista Apt. 918\nJaidenport, CT 26220'),
+(6,'Jeromy','Murphy',43,'н',' разнорабочий','Строительный колледж №2','1988-10-13',60000,89460250166,'48884 Stamm Mount Suite 320\nPort Leathahaven, NC 89990'),
+(7,'Marge','Schimmel',56,'ж',' повар',' Колледж №7','1998-01-19',46000,89500617147,'2689 Rath Garden Suite 922\nKeshawnfurt, GA 99115-4504'),
+(8,'Julio','Rau',50,'ж','сварщик','ПТУ№1','2003-05-16',45000,89976842213,'3207 Crawford Dale Suite 735\nPort Loniehaven, ME 95723-4654'),
+(9,'Daisy','Bechtelar',34,'ж',' стропальщик','Строительный колледж №2','1983-09-09',60000,89259105700,'6688 Donato Oval Suite 782\nKrisview, NH 42108-5390'),
+(10,'Bo','VonRueden',39,'н',' разнорабочий',' Колледж №7','2007-05-02',46000,89697148128,'26085 Tessie View\nKovacekfurt, MO 89411'),
+(11,'Nikita','Waelchi',52,'н',' программист','ПТУ №6','1996-08-14',43000,89180916724,'92460 Serena Tunnel\nHughtown, RI 53072'),
+(12,'Abel','Fisher',33,'н',' арматурщик','ПТУ№1','1990-02-24',45000,89019223288,'70205 Camilla Orchard Suite 000\nNew Berneicechester, MS 63184-4124'),
+(13,'Samanta','Wehner',25,'ж',' стропальщик',' Колледж №7','1976-12-06',30000,89138413869,'137 Kirlin Ferry Apt. 551\nNew Dolores, PA 31807'),
+(14,'Ronny','Murphy',29,'н',' водитель','ПТУ№1','1977-01-23',60000,89192200730,'62992 Marina Rue Apt. 164\nMosesmouth, AK 24274-2844'),
+(15,'Jocelyn','Anderson',27,'ж',' плотник','ПТУ№1','2000-10-30',50000,89826252811,'85499 Gretchen Prairie Suite 616\nDarronborough, OH 38564');
 
 
 
