@@ -6,7 +6,7 @@ https://www.sql-ex.ru/index.php?Lang
 ##### Импорт postgresDB
    https://habr.com/ru/post/658153/
   
-<hr>  
+-------------------------------------
    BackUP:
    - удалить старую БД (битую):
    - Создадим на сервере новую базу данных, в которую будем восстанавливать резервную копию. Перед этим посмотрим список баз данных на сервере:
@@ -19,7 +19,7 @@ https://www.sql-ex.ru/index.php?Lang
   
   
 https://serveradmin.ru/bekap-i-vosstanovlenie-bazyi-1s-v-bd-postgresql/
-<hr>
+
    
  ----------------------
  ### 1c
