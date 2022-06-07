@@ -5,7 +5,7 @@
      
 https://dvsemenov.ru/predvaritelnaya-obrabotka-tekstovyx-dannyx-v-python-dlya-nlp/
 
-
+  
 file`s of project
 .
 https://www.sql-ex.ru/index.php?Lang    
