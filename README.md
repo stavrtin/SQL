@@ -1,3 +1,7 @@
+#### 1C
+https://www.youtube.com/playlist?list=PL6Nx1KDcurkBdxssD1k56SDnwuTuX2bBr
+
+
 #### SQL
      
      нормализация
