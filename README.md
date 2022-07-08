@@ -27,7 +27,7 @@ https://www.sql-ex.ru/index.php?Lang
    #### psql -U postgres base1c-restored < demo20205301211.sql   
   
   
-   
+     
 https://serveradmin.ru/bekap-i-vosstanovlenie-bazyi-1s-v-bd-postgresql/
 
      
