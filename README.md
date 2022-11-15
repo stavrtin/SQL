@@ -15,7 +15,7 @@ https://www.sql-ex.ru/index.php?Lang
    
 ##### Импорт postgresDB
    https://habr.com/ru/post/658153/
-   
+    
 -------------------------------------
    BackUP:
    - удалить старую БД (битую):
