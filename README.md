@@ -12,7 +12,7 @@ https://dvsemenov.ru/predvaritelnaya-obrabotka-tekstovyx-dannyx-v-python-dlya-nl
 file`s of project
 .
 https://www.sql-ex.ru/index.php?Lang    
-   
+    
 ##### Импорт postgresDB
    https://habr.com/ru/post/658153/
     
