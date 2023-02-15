@@ -26,7 +26,7 @@ https://www.sql-ex.ru/index.php?Lang
    - Базу данных создали. Теперь загружаем в нее наш бэкап 1с:
    #### psql -U postgres base1c-restored < demo20205301211.sql   
   
-    
+     
      
 https://serveradmin.ru/bekap-i-vosstanovlenie-bazyi-1s-v-bd-postgresql/
 
