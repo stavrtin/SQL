@@ -3,7 +3,7 @@ https://www.youtube.com/playlist?list=PL6Nx1KDcurkBdxssD1k56SDnwuTuX2bBr
 
  
 #### SQL
-     
+      
      нормализация
      
 https://dvsemenov.ru/predvaritelnaya-obrabotka-tekstovyx-dannyx-v-python-dlya-nlp/
